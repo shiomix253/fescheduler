@@ -1984,11 +1984,6 @@ export const EVENTS_DB = {
         group: "浪速区民センター1F ホール",
       },
       {
-        id: "stage1",
-        name: "ステージ①",
-        group: "浪速区民センター1F ホール",
-      },
-      {
         id: "booth1",
         name: "ホールブース",
         group: "浪速区民センター1F ホール",
