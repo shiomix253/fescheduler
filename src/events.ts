@@ -119,7 +119,7 @@ export const EVENTS_DB = {
       {
         id: 101,
         stageId: "room1",
-        title: "トクチン",
+        title: "トクテン",
         artist: "WHTNU",
         startTime: "10:30",
         endTime: "11:00",
@@ -128,7 +128,7 @@ export const EVENTS_DB = {
       {
         id: 102,
         stageId: "room1",
-        title: "トクチン",
+        title: "トクテン",
         artist: "WHTNU",
         startTime: "11:10",
         endTime: "11:40",
@@ -137,7 +137,7 @@ export const EVENTS_DB = {
       {
         id: 103,
         stageId: "room1",
-        title: "トクチン",
+        title: "トクテン",
         artist: "WHTNU",
         startTime: "11:50",
         endTime: "12:20",
@@ -146,7 +146,7 @@ export const EVENTS_DB = {
       {
         id: 104,
         stageId: "room1",
-        title: "トクチン",
+        title: "トクテン",
         artist: "WHTNU",
         startTime: "12:30",
         endTime: "13:00",
@@ -155,7 +155,7 @@ export const EVENTS_DB = {
       {
         id: 105,
         stageId: "room1",
-        title: "トクチン",
+        title: "トクテン",
         artist: "WHTNU",
         startTime: "13:10",
         endTime: "13:40",
@@ -164,7 +164,7 @@ export const EVENTS_DB = {
       {
         id: 106,
         stageId: "room1",
-        title: "トクチン",
+        title: "トクテン",
         artist: "WHTNU",
         startTime: "13:50",
         endTime: "14:20",
@@ -173,7 +173,7 @@ export const EVENTS_DB = {
       {
         id: 107,
         stageId: "room1b",
-        title: "トクチン",
+        title: "トクテン",
         artist: "WHTNU",
         startTime: "14:10",
         endTime: "14:40",
@@ -182,7 +182,7 @@ export const EVENTS_DB = {
       {
         id: 108,
         stageId: "room1",
-        title: "トクチン",
+        title: "トクテン",
         artist: "WHTNU",
         startTime: "14:30",
         endTime: "15:00",
@@ -191,7 +191,7 @@ export const EVENTS_DB = {
       {
         id: 109,
         stageId: "room1b",
-        title: "トクチン",
+        title: "トクテン",
         artist: "WHTNU",
         startTime: "14:50",
         endTime: "15:20",
@@ -200,7 +200,7 @@ export const EVENTS_DB = {
       {
         id: 110,
         stageId: "room1",
-        title: "トクチン",
+        title: "トクテン",
         artist: "WHTNU",
         startTime: "15:10",
         endTime: "15:40",
@@ -209,7 +209,7 @@ export const EVENTS_DB = {
       {
         id: 111,
         stageId: "room1b",
-        title: "トクチン",
+        title: "トクテン",
         artist: "WHTNU",
         startTime: "15:30",
         endTime: "16:00",
@@ -218,7 +218,7 @@ export const EVENTS_DB = {
       {
         id: 112,
         stageId: "room1",
-        title: "トクチン",
+        title: "トクテン",
         artist: "WHTNU",
         startTime: "15:50",
         endTime: "16:20",
@@ -227,7 +227,7 @@ export const EVENTS_DB = {
       {
         id: 113,
         stageId: "room1b",
-        title: "トクチン",
+        title: "トクテン",
         artist: "WHTNU",
         startTime: "16:10",
         endTime: "16:40",
@@ -236,7 +236,7 @@ export const EVENTS_DB = {
       {
         id: 114,
         stageId: "room1",
-        title: "トクチン",
+        title: "トクテン",
         artist: "WHTNU",
         startTime: "16:30",
         endTime: "17:00",
@@ -245,7 +245,7 @@ export const EVENTS_DB = {
       {
         id: 115,
         stageId: "room1b",
-        title: "トクチン",
+        title: "トクテン",
         artist: "WHTNU",
         startTime: "16:50",
         endTime: "17:20",
@@ -254,7 +254,7 @@ export const EVENTS_DB = {
       {
         id: 116,
         stageId: "room1b",
-        title: "トクチン",
+        title: "トクテン",
         artist: "WHTNU",
         startTime: "17:30",
         endTime: "18:00",
@@ -263,7 +263,7 @@ export const EVENTS_DB = {
       {
         id: 117,
         stageId: "room1b",
-        title: "トクチン",
+        title: "トクテン",
         artist: "WHTNU",
         startTime: "18:10",
         endTime: "18:40",
@@ -272,7 +272,7 @@ export const EVENTS_DB = {
       {
         id: 118,
         stageId: "room1b",
-        title: "トクチン",
+        title: "トクテン",
         artist: "WHTNU",
         startTime: "18:50",
         endTime: "19:20",
@@ -281,7 +281,7 @@ export const EVENTS_DB = {
       {
         id: 119,
         stageId: "room1b",
-        title: "トクチン",
+        title: "トクテン",
         artist: "WHTNU",
         startTime: "19:30",
         endTime: "20:00",
@@ -290,7 +290,7 @@ export const EVENTS_DB = {
       {
         id: 120,
         stageId: "room1b",
-        title: "トクチン",
+        title: "トクテン",
         artist: "WHTNU",
         startTime: "20:10",
         endTime: "20:40",
@@ -1877,7 +1877,118 @@ export const EVENTS_DB = {
     title: "大阪最宴祭14 2日目 (2026/2/22)※準備中",
     startHour: 9,
     endHour: 23,
-    stages: [],
+    stages: [
+      {
+        id: "room1",
+        name: "第1会議室",
+        group: "浪速区民センター1F",
+      },
+      {
+        id: "room1b",
+        name: "第1会議室",
+        group: "浪速区民センター1F",
+      },
+      {
+        id: "room2",
+        name: "第2会議室",
+        group: "浪速区民センター1F",
+      },
+      {
+        id: "room3",
+        name: "第3会議室",
+        group: "浪速区民センター1F",
+      },
+      {
+        id: "room4",
+        name: "第4会議室",
+        group: "浪速区民センター2F",
+      },
+      {
+        id: "room5",
+        name: "第5会議室",
+        group: "浪速区民センター2F",
+      },
+      {
+        id: "japanese",
+        name: "和室",
+        group: "浪速区民センター2F",
+      },
+      {
+        id: "room6",
+        name: "第6会議室",
+        group: "浪速区民センター3F",
+      },
+      {
+        id: "room7",
+        name: "第7会議室",
+        group: "浪速区民センター3F",
+      },
+      {
+        id: "room8",
+        name: "第8会議室",
+        group: "浪速区民センター3F",
+      },
+      {
+        id: "room9",
+        name: "第9会議室",
+        group: "浪速区民センター3F",
+      },
+      {
+        id: "rental1",
+        name: "カフェ上（大）",
+        group: "レンタルスペース※階段のみ",
+      },
+      {
+        id: "rental2",
+        name: "カフェ上（大）",
+        group: "レンタルスペース※階段のみ",
+      },
+      {
+        id: "room401",
+        name: "民泊401",
+        group: "民泊※エレベーターあり",
+      },
+      {
+        id: "room403",
+        name: "民泊403",
+        group: "民泊※エレベーターあり",
+      },
+      {
+        id: "room502",
+        name: "民泊502",
+        group: "民泊※エレベーターあり",
+      },
+      {
+        id: "room602-1",
+        name: "民泊602①",
+        group: "民泊※エレベーターあり",
+      },
+      {
+        id: "room602-2",
+        name: "民泊602②",
+        group: "民泊※エレベーターあり",
+      },
+      {
+        id: "stage1",
+        name: "ステージ①",
+        group: "浪速区民センター1F ホール",
+      },
+      {
+        id: "stand",
+        name: "観客席",
+        group: "浪速区民センター1F ホール",
+      },
+      {
+        id: "booth1",
+        name: "ホールブース①",
+        group: "浪速区民センター1F ホール",
+      },
+      {
+        id: "booth2",
+        name: "ホールブース②",
+        group: "浪速区民センター1F ホール",
+      },
+    ],
     schedules: [],
   },
   "saienfes14-day3": {
