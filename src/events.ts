@@ -1,3 +1,4 @@
+export const EVENTS_DB = {
   "qgaku": {
     "title": "九州学生謎解きフェス (2026/3/7)",
     "startHour": 10,
