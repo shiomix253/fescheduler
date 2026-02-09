@@ -289,13 +289,12 @@ const isBlocked = (targetEvent) => {
     const fStart = timeToMinutes(f.startTime);
     const fEnd = timeToMinutes(f.endTime);
 
-    // 判定ロジックの修正：
-    // 「相手の開始時間」が「自分（お気に入り）の終了時間 + 移動時間」より前、
-    // かつ「相手の終了時間」が「自分（お気に入り）の開始時間 - 移動時間」より後の場合にブロック
-    return tStart < (fEnd + TRAVEL_TIME) && (tEnd + TRAVEL_TIME) > fStart;
+    // どちらかが「終わってから5分以内」に次が始まっていたらブロック
+    // (ターゲットの開始がお気に入りの終了+5分より前) かつ (ターゲットの終了がお気に入りの開始-5分より後)
+    return tStart < (fEnd + TRAVEL_TIME) && tEnd > (fStart - TRAVEL_TIME);
   });
 };
-
+  
 const getStageName = (id) => {
   return eventData.value?.stages.find((s) => s.id === id)?.name || id;
 };
