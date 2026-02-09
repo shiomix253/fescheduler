@@ -281,7 +281,6 @@ const isBlocked = (targetEvent) => {
   
   // 考慮したい移動時間（分）
   const TRAVEL_TIME = 5;
-
   const tStart = timeToMinutes(targetEvent.startTime);
   const tEnd = timeToMinutes(targetEvent.endTime);
 
