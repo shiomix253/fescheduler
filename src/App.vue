@@ -279,12 +279,21 @@ const timeSlots = computed(() => {
 
 const isBlocked = (targetEvent) => {
   if (favorites.value.includes(targetEvent.id)) return false;
+  
+  // 考慮したい移動時間（分）
+  const TRAVEL_TIME = 5;
+
   const tStart = timeToMinutes(targetEvent.startTime);
   const tEnd = timeToMinutes(targetEvent.endTime);
+
   return favoriteEvents.value.some((f) => {
     const fStart = timeToMinutes(f.startTime);
     const fEnd = timeToMinutes(f.endTime);
-    return tStart < fEnd && tEnd > fStart;
+
+    // 判定ロジックの修正：
+    // 「相手の開始時間」が「自分（お気に入り）の終了時間 + 移動時間」より前、
+    // かつ「相手の終了時間」が「自分（お気に入り）の開始時間 - 移動時間」より後の場合にブロック
+    return tStart < (fEnd + TRAVEL_TIME) && (tEnd + TRAVEL_TIME) > fStart;
   });
 };
 
