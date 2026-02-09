@@ -18,6 +18,26 @@ export const EVENTS_DB = {
         "id": "room6d",
         "name": "会議室6D",
         "group": "エイムアテイン博多駅前会議室"
+      },
+      {
+        "id": "room5e",
+        "name": "会議室5E",
+        "group": "エイムアテイン博多駅前会議室"
+      },
+      {
+        "id": "room5d",
+        "name": "会議室5D",
+        "group": "エイムアテイン博多駅前会議室"
+      },
+      {
+        "id": "room6b",
+        "name": "会議室6B",
+        "group": "エイムアテイン博多駅前会議室"
+      },
+      {
+        "id": "room6a",
+        "name": "会議室6A",
+        "group": "エイムアテイン博多駅前会議室"
       }
     ],
     "schedules": [
@@ -59,7 +79,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 105,
-        "stageId": "room?",
+        "stageId": "room5e",
         "title": "ゾンビ蔓延る研究所からの脱出",
         "artist": "InTale",
         "startTime": "10:30",
@@ -68,7 +88,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 106,
-        "stageId": "room?",
+        "stageId": "room5e",
         "title": "ゾンビ蔓延る研究所からの脱出",
         "artist": "InTale",
         "startTime": "12:05",
@@ -77,7 +97,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 107,
-        "stageId": "room?",
+        "stageId": "room5e",
         "title": "ゾンビ蔓延る研究所からの脱出",
         "artist": "InTale",
         "startTime": "13:40",
@@ -86,7 +106,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 108,
-        "stageId": "room?",
+        "stageId": "room5e",
         "title": "ゾンビ蔓延る研究所からの脱出",
         "artist": "InTale",
         "startTime": "15:15",
@@ -95,7 +115,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 109,
-        "stageId": "room?",
+        "stageId": "room5e",
         "title": "ゾンビ蔓延る研究所からの脱出",
         "artist": "InTale",
         "startTime": "16:50",
@@ -104,7 +124,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 110,
-        "stageId": "room?",
+        "stageId": "room5e",
         "title": "ゾンビ蔓延る研究所からの脱出",
         "artist": "InTale",
         "startTime": "18:25",
@@ -113,7 +133,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 111,
-        "stageId": "room?",
+        "stageId": "room6a",
         "title": "青い鳥活版工房",
         "artist": "Polaris",
         "startTime": "10:00",
@@ -122,7 +142,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 112,
-        "stageId": "room?",
+        "stageId": "room6a",
         "title": "青い鳥活版工房",
         "artist": "Polaris",
         "startTime": "11:40",
@@ -131,7 +151,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 113,
-        "stageId": "room?",
+        "stageId": "room6a",
         "title": "青い鳥活版工房",
         "artist": "Polaris",
         "startTime": "13:20",
@@ -140,7 +160,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 114,
-        "stageId": "room?",
+        "stageId": "room6a",
         "title": "青い鳥活版工房",
         "artist": "Polaris",
         "startTime": "15:20",
@@ -149,7 +169,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 115,
-        "stageId": "room?",
+        "stageId": "room6a",
         "title": "青い鳥活版工房",
         "artist": "Polaris",
         "startTime": "17:00",
@@ -158,7 +178,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 116,
-        "stageId": "room?",
+        "stageId": "room6a",
         "title": "青い鳥活版工房",
         "artist": "Polaris",
         "startTime": "18:40",
@@ -230,7 +250,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 204,
-        "stageId": "room?",
+        "stageId": "room6b",
         "title": "鏡の国の鏡界戦",
         "artist": "RI:Works",
         "startTime": "10:00",
@@ -239,7 +259,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 205,
-        "stageId": "room?",
+        "stageId": "room6b",
         "title": "鏡の国の鏡界戦",
         "artist": "RI:Works",
         "startTime": "11:10",
@@ -248,7 +268,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 206,
-        "stageId": "room?",
+        "stageId": "room6b",
         "title": "鏡の国の鏡界戦",
         "artist": "RI:Works",
         "startTime": "12:20",
@@ -257,7 +277,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 207,
-        "stageId": "room?",
+        "stageId": "room6b",
         "title": "鏡の国の鏡界戦",
         "artist": "RI:Works",
         "startTime": "13:30",
@@ -266,7 +286,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 208,
-        "stageId": "room?",
+        "stageId": "room6b",
         "title": "鏡の国の鏡界戦",
         "artist": "RI:Works",
         "startTime": "14:40",
@@ -275,7 +295,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 209,
-        "stageId": "room?",
+        "stageId": "room6b",
         "title": "鏡の国の鏡界戦",
         "artist": "RI:Works",
         "startTime": "15:50",
@@ -284,7 +304,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 210,
-        "stageId": "room?",
+        "stageId": "room6b",
         "title": "鏡の国の鏡界戦",
         "artist": "RI:Works",
         "startTime": "17:00",
@@ -293,7 +313,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 211,
-        "stageId": "room?",
+        "stageId": "room6b",
         "title": "鏡の国の鏡界戦",
         "artist": "RI:Works",
         "startTime": "18:10",
@@ -302,7 +322,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 212,
-        "stageId": "room?",
+        "stageId": "room6b",
         "title": "鏡の国の鏡界戦",
         "artist": "RI:Works",
         "startTime": "19:20",
@@ -374,7 +394,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 308,
-        "stageId": "room?",
+        "stageId": "room5d",
         "title": "きゃぷちゃ！",
         "artist": "九工大logiQ",
         "startTime": "10:00",
@@ -383,7 +403,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 401,
-        "stageId": "room?",
+        "stageId": "room5d",
         "title": "きゃぷちゃ！",
         "artist": "九工大logiQ",
         "startTime": "10:55",
@@ -392,7 +412,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 402,
-        "stageId": "room?",
+        "stageId": "room5d",
         "title": "きゃぷちゃ！",
         "artist": "九工大logiQ",
         "startTime": "11:50",
@@ -401,7 +421,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 403,
-        "stageId": "room?",
+        "stageId": "room5d",
         "title": "きゃぷちゃ！",
         "artist": "九工大logiQ",
         "startTime": "13:15",
@@ -410,7 +430,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 404,
-        "stageId": "room?",
+        "stageId": "room5d",
         "title": "きゃぷちゃ！",
         "artist": "九工大logiQ",
         "startTime": "14:10",
@@ -419,7 +439,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 405,
-        "stageId": "room?",
+        "stageId": "room5d",
         "title": "きゃぷちゃ！",
         "artist": "九工大logiQ",
         "startTime": "15:05",
@@ -428,7 +448,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 501,
-        "stageId": "room?",
+        "stageId": "room5d",
         "title": "きゃぷちゃ！",
         "artist": "九工大logiQ",
         "startTime": "16:00",
@@ -437,7 +457,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 502,
-        "stageId": "room?",
+        "stageId": "room5d",
         "title": "きゃぷちゃ！",
         "artist": "九工大logiQ",
         "startTime": "16:55",
@@ -446,7 +466,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 503,
-        "stageId": "room?",
+        "stageId": "room5d",
         "title": "きゃぷちゃ！",
         "artist": "九工大logiQ",
         "startTime": "17:50",
@@ -455,7 +475,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 504,
-        "stageId": "room?",
+        "stageId": "room5d",
         "title": "きゃぷちゃ！",
         "artist": "九工大logiQ",
         "startTime": "18:45",
@@ -464,7 +484,7 @@ export const EVENTS_DB = {
       },
       {
         "id": 601,
-        "stageId": "room?",
+        "stageId": "room5d",
         "title": "きゃぷちゃ！",
         "artist": "九工大logiQ",
         "startTime": "19:40",
