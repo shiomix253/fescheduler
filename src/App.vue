@@ -277,20 +277,26 @@ const timeSlots = computed(() => {
 });
 
 const isBlocked = (targetEvent) => {
+  // すでにお気に入りに入っている本人なら、ブロックしない（解除できるようにするため）
   if (favorites.value.includes(targetEvent.id)) return false;
   
-  // 考慮したい移動時間（分）
   const TRAVEL_TIME = 5;
   const tStart = timeToMinutes(targetEvent.startTime);
   const tEnd = timeToMinutes(targetEvent.endTime);
 
+  // 1. 重複チェック：同じ名前のイベントがすでにお気に入りにあるか？
+  const isAlreadySelected = favoriteEvents.value.some(
+    (f) => f.title === targetEvent.title
+  );
+  if (isAlreadySelected) return true;
+
+  // 2. 時間衝突チェック：他の予定と被っていないか？
   return favoriteEvents.value.some((f) => {
     const fStart = timeToMinutes(f.startTime);
     const fEnd = timeToMinutes(f.endTime);
 
-    // どちらかが「終わってから5分以内」に次が始まっていたらブロック
-    // (ターゲットの開始がお気に入りの終了+5分より前) かつ (ターゲットの終了がお気に入りの開始-5分より後)
-    return tStart < (fEnd + TRAVEL_TIME) && tEnd > (fStart - TRAVEL_TIME);
+    // 5分の余裕を持って重なっているか判定
+    return !( (tEnd + TRAVEL_TIME <= fStart) || (fEnd + TRAVEL_TIME <= tStart) );
   });
 };
 const getStageName = (id) => {
