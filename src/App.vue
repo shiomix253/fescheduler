@@ -277,7 +277,7 @@ const timeSlots = computed(() => {
 });
 
 const isBlocked = (targetEvent) => {
-  // すでにお気に入りに入っている本人なら、ブロックしない（解除できるようにするため）
+  // すでにお気に入りに入っている本人なら、ブロックしない
   if (favorites.value.includes(targetEvent.id)) return false;
   
   const TRAVEL_TIME = 5;
@@ -299,6 +299,7 @@ const isBlocked = (targetEvent) => {
     return !( (tEnd + TRAVEL_TIME <= fStart) || (fEnd + TRAVEL_TIME <= tStart) );
   });
 };
+
 const getStageName = (id) => {
   return eventData.value?.stages.find((s) => s.id === id)?.name || id;
 };
