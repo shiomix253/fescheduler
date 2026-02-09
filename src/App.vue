@@ -276,18 +276,24 @@ const timeSlots = computed(() => {
   return slots;
 });
 
- const isBlocked = (targetEvent) => {
+const isBlocked = (targetEvent) => {
   if (favorites.value.includes(targetEvent.id)) return false;
+  
+  // 考慮したい移動時間（分）
+  const TRAVEL_TIME = 5;
+
   const tStart = timeToMinutes(targetEvent.startTime);
   const tEnd = timeToMinutes(targetEvent.endTime);
-  return favoriteEvents.value.some((f) => {
 
+  return favoriteEvents.value.some((f) => {
     const fStart = timeToMinutes(f.startTime);
     const fEnd = timeToMinutes(f.endTime);
-    return tStart < fEnd && tEnd > fStart;
+
+    // どちらかが「終わってから5分以内」に次が始まっていたらブロック
+    // (ターゲットの開始がお気に入りの終了+5分より前) かつ (ターゲットの終了がお気に入りの開始-5分より後)
+    return tStart < (fEnd + TRAVEL_TIME) && tEnd > (fStart - TRAVEL_TIME);
   });
-}; 
-  
+};
 const getStageName = (id) => {
   return eventData.value?.stages.find((s) => s.id === id)?.name || id;
 };
