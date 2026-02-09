@@ -20,13 +20,12 @@ import {
   Import,
   LogOut,
 } from "lucide-vue-next";
-
+import { EVENTS_DB } from "./events";
 // ==========================================
 // データ・設定定義セクション
 // ==========================================
 
 const APP_NAME = "FEScheduler";
-import { EVENTS_DB } from "./events";
 
 // ==========================================
 // ロジック
